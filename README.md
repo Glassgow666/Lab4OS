@@ -2,13 +2,19 @@
 ## DESCRIPTION
 Let there be n agents and n tasks. Any agent can be assigned to perform any task, incurring some cost that may vary depending on the agent-task assignment. It is required to perform all tasks by assigning exactly one agent to each task and exactly one task to each agent in such a way that the total cost of the assignment is minimized.
 Example: You work as a manager for a chip manufacturer, and you currently have 3 people on the road meeting clients. Your salespeople are in Jaipur, Pune and Bangalore, and you want them to fly to three other cities: Delhi, Mumbai and Kerala. The table below shows the cost of airline tickets in INR between the cities:
-![Image alt](https://github.com/VovaMaybeNextTime/Lab3OS/blob/main/res/1.jpg)
+
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/1.jpg)
+
 The question: where would you send each of your salespeople in order to minimize fair?
 
 Possible assignment: Cost = 11000 INR
-![Image alt](https://github.com/VovaMaybeNextTime/Lab3OS/blob/main/res/1.jpg)
+
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/2.jpg)
+
 Other Possible assignment: Cost = 9500 INR and this is the best of the 3! possible assignments.
-![Image alt](https://github.com/VovaMaybeNextTime/Lab3OS/blob/main/res/1.jpg)
+
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/3.jpg)
+
 **Brute force solution** is to consider every possible assignment implies a complexity of **Ω(n!)**.
 
 The **Hungarian algorithm, aka Munkres assignment algorithm**, utilizes the following theorem for polynomial runtime complexity **(worst case O(n3))** and guaranteed optimality:
@@ -50,7 +56,7 @@ respectively.
 
 **Step 3**: Cover all zeroes with minimum number of 
 horizontal and vertical lines.
-![Image alt](https://github.com/VovaMaybeNextTime/Lab3OS/blob/main/res/1.jpg)
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/4.jpg)
 
 **Step 4**:  Since we need 3 lines to cover all zeroes,
 we have found the optimal assignment. 
@@ -88,7 +94,7 @@ respectively.
 
 **Step 3**: Cover all zeroes with minimum number of 
 horizontal and vertical lines.
-![Image alt](https://github.com/VovaMaybeNextTime/Lab3OS/blob/main/res/1.jpg)
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/5.jpg)
 
 **Step 4**:  Since we only need 2 lines to cover all zeroes,
 we have NOT found the optimal assignment. 
