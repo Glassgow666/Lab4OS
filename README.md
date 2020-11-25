@@ -63,6 +63,7 @@ respectively.
 
 **Step 3**: Cover all zeroes with minimum number of 
 horizontal and vertical lines.
+
 ![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/4.jpg)
 
 **Step 4**:  Since we need 3 lines to cover all zeroes,
