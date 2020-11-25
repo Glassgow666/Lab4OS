@@ -149,4 +149,4 @@ So the optimal cost is 4000 + 2000 + 2500 = 8500
 
 ## CONCLUSION
 
-![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/5.jpg)
+![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/6.jpg)
