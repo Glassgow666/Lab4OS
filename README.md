@@ -35,7 +35,9 @@ We reduce our original weight matrix to contain zeros, by using the above theore
  
 Below is the cost matrix of example given in above diagrams.
  2500  4000  3500
+ 
  4000  6000  3500
+ 
  2000  4000  2500
 
 **Step 1**: Subtract minimum of every row.
@@ -43,7 +45,9 @@ Below is the cost matrix of example given in above diagrams.
 3 respectively.
 
    0   1500  1000
+   
   500  2500   0
+  
    0   2000  500
 
 **Step 2**: Subtract minimum of every column.
@@ -51,7 +55,9 @@ Below is the cost matrix of example given in above diagrams.
 respectively.
 
    0    0   1000
+   
   500  1000   0
+  
    0   500  500
 
 **Step 3**: Cover all zeroes with minimum number of 
@@ -61,7 +67,9 @@ horizontal and vertical lines.
 **Step 4**:  Since we need 3 lines to cover all zeroes,
 we have found the optimal assignment. 
  2500  **4000**  3500
+ 
  4000  6000  **3500**
+ 
  **2000**  4000  2500
 
 So the optimal cost is 4000 + 3500 + 2000 = 9500
@@ -73,7 +81,9 @@ In the above example, the first check for optimality did give us solution. What 
  
 cost matrix:
  1500  4000  4500
+ 
  2000  6000  3500
+ 
  2000  4000  2500
 
 **Step 1**: Subtract minimum of every row.
@@ -81,7 +91,9 @@ cost matrix:
 3 respectively.
 
   0    2500  3000
+  
   0    4000  1500
+  
   0    2000   500
 
 **Step 2**: Subtract minimum of every column.
@@ -89,11 +101,14 @@ cost matrix:
 respectively.
 
   0     500  2500
+  
   0    2000  1000 
+  
   0      0      0 
 
 **Step 3**: Cover all zeroes with minimum number of 
 horizontal and vertical lines.
+
 ![Image alt](https://github.com/VovaMaybeNextTime/Lab4OS/blob/main/res/5.jpg)
 
 **Step 4**:  Since we only need 2 lines to cover all zeroes,
@@ -102,19 +117,25 @@ we have NOT found the optimal assignment.
 **Step 5**:  We subtract the smallest uncovered entry 
 from all uncovered rows. Smallest entry is 500.
  -500    0   2000
+ 
  -500  1500   500
+ 
    0     0      0
 
 Then we add the smallest entry to all covered columns, we get
    0     0   2000
+   
    0   1500   500
+   
   500    0      0
 
 Now we return to **Step 3**:. Here we cover again using
 lines. and go to **Step 4**:. Since we need 3 lines to 
 cover, we found the optimal solution.
  1500  **4000**  4500
+ 
  **2000**  6000  3500
+ 
  2000  4000  **2500**
 
 So the optimal cost is 4000 + 2000 + 2500 = 8500
