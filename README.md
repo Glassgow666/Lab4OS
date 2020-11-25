@@ -34,6 +34,7 @@ We reduce our original weight matrix to contain zeros, by using the above theore
 
  
 Below is the cost matrix of example given in above diagrams.
+
  2500  4000  3500
  
  4000  6000  3500
@@ -66,6 +67,7 @@ horizontal and vertical lines.
 
 **Step 4**:  Since we need 3 lines to cover all zeroes,
 we have found the optimal assignment. 
+ 
  2500  **4000**  3500
  
  4000  6000  **3500**
@@ -80,6 +82,7 @@ In the above example, the first check for optimality did give us solution. What 
 
  
 cost matrix:
+ 
  1500  4000  4500
  
  2000  6000  3500
@@ -116,6 +119,7 @@ we have NOT found the optimal assignment.
 
 **Step 5**:  We subtract the smallest uncovered entry 
 from all uncovered rows. Smallest entry is 500.
+ 
  -500    0   2000
  
  -500  1500   500
@@ -123,6 +127,7 @@ from all uncovered rows. Smallest entry is 500.
    0     0      0
 
 Then we add the smallest entry to all covered columns, we get
+   
    0     0   2000
    
    0   1500   500
@@ -132,6 +137,7 @@ Then we add the smallest entry to all covered columns, we get
 Now we return to **Step 3**:. Here we cover again using
 lines. and go to **Step 4**:. Since we need 3 lines to 
 cover, we found the optimal solution.
+ 
  1500  **4000**  4500
  
  **2000**  6000  3500
